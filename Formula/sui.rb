@@ -2,7 +2,7 @@
 class Sui < Formula
   desc "Sui CLI install"
   homepage "https://docs.sui.io"
-  version "1.14.0"
+  version "v1.14.2"
   license "Apache-2.0"
 
   on_macos do
