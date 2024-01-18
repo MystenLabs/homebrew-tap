@@ -24,7 +24,7 @@ class Sui < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+    if Hardware::CPU.is_64_bit?
       url "https://sui-releases.s3-accelerate.amazonaws.com/releases/sui-mainnet-v1.16.2-ubuntu-x86_64.tgz"
       sha256 "cc525fe55408a71b42a1777cd0ce6c8e58d4f1be159f2e7290d1d98e71a1e1a2"
 
