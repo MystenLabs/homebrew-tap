@@ -6,7 +6,7 @@ class Sui < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://sui-releases.s3-accelerate.amazonaws.com/releases/sui-mainnet-v{{ version }}-macos-arm64.tgz"
+      url "https://sui-releases.s3-accelerate.amazonaws.com/releases/sui-testnet-v{{ version }}-macos-arm64.tgz"
       sha256 "{{ macos_arm_sha256 }}"
 
       def install
@@ -14,7 +14,7 @@ class Sui < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://sui-releases.s3-accelerate.amazonaws.com/releases/sui-mainnet-v{{ version }}-macos-x86_64.tgz"
+      url "https://sui-releases.s3-accelerate.amazonaws.com/releases/sui-testnet-v{{ version }}-macos-x86_64.tgz"
       sha256 "{{ macos_intel_sha256 }}"
 
       def install
@@ -25,7 +25,7 @@ class Sui < Formula
 
   on_linux do
     if Hardware::CPU.is_64_bit?
-      url "https://sui-releases.s3-accelerate.amazonaws.com/releases/sui-mainnet-v{{ version }}-ubuntu-x86_64.tgz"
+      url "https://sui-releases.s3-accelerate.amazonaws.com/releases/sui-testnet-v{{ version }}-ubuntu-x86_64.tgz"
       sha256 "{{ linux_sha256 }}"
 
       def install
