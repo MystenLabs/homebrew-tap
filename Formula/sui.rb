@@ -4,6 +4,8 @@ class Sui < Formula
   version "1.17.3"
   license "Apache-2.0"
 
+  deprecate! date: "2024-02-05", because: "migrated to homebrew-core, untap and install via homebrew core: `brew untap mystenlabs/tap && brew install sui`"
+
   on_macos do
     if Hardware::CPU.arm?
       url "https://sui-releases.s3-accelerate.amazonaws.com/releases/sui-mainnet-v1.17.3-macos-arm64.tgz"
