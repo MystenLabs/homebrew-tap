@@ -1,21 +1,21 @@
 class Sui < Formula
   desc "Sui CLI install"
   homepage "https://docs.sui.io"
-  version "1.17.3"
+  version "1.18.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://sui-releases.s3-accelerate.amazonaws.com/releases/sui-mainnet-v1.17.3-macos-arm64.tgz"
-      sha256 "7790b9a38305e8202f0640b1b1e4b210282477ed64cafdd32f402f4e8018ce30"
+      url "https://sui-releases.s3-accelerate.amazonaws.com/releases/sui-testnet-v1.18.0-macos-arm64.tgz"
+      sha256 "00be9075838d3c926a9ebc7c6d76449578c6c080cea9cc42819c6c3de57978e3"
 
       def install
         bin.install "target/release/sui-macos-arm64" => "sui"
       end
     end
     if Hardware::CPU.intel?
-      url "https://sui-releases.s3-accelerate.amazonaws.com/releases/sui-mainnet-v1.17.3-macos-x86_64.tgz"
-      sha256 "bf5e10d28e041bd5cd5eb69205c577d085bdb1e6ecaf315dd73ed7ac57425ad6"
+      url "https://sui-releases.s3-accelerate.amazonaws.com/releases/sui-testnet-v1.18.0-macos-x86_64.tgz"
+      sha256 "25344112fbb52b1967c82b774e3947dd0e63683a3e21455293f21064faa8f9f0"
 
       def install
         bin.install "target/release/sui-macos-x86_64" => "sui"
@@ -25,8 +25,8 @@ class Sui < Formula
 
   on_linux do
     if Hardware::CPU.is_64_bit?
-      url "https://sui-releases.s3-accelerate.amazonaws.com/releases/sui-mainnet-v1.17.3-ubuntu-x86_64.tgz"
-      sha256 "69610f8c092b7c21436763d5a7d462d1ad39a0382379fbc90c10630425b5e36a"
+      url "https://sui-releases.s3-accelerate.amazonaws.com/releases/sui-testnet-v1.18.0-ubuntu-x86_64.tgz"
+      sha256 "1c875d64e89ab932c46b9e01032712fd96c3c083dd6d773381de112e3c4d834d"
 
       def install
         bin.install "target/release/sui-ubuntu-x86_64" => "sui"
